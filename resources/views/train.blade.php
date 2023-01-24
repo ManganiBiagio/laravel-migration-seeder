@@ -7,7 +7,7 @@
         <div class="col">
             Partenza:{{$train->station_start}}<br>
             Arrivo:{{$train->station_end}}<br>
-            Data:{{$train->start_at}}
+            Data Partenza: {{$train->start_at}}
             
         </div>
             
