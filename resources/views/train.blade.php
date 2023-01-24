@@ -13,19 +13,19 @@
                   
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"> Data Partenza: {{$train->departureTimeToString()}}</li>
-                    <li class="list-group-item">Data Arrivo: {{$train->arrivedTimeToString()}}</li>
-                    <li class="list-group-item">Azienda: {{$train->agency}}</li>
-                    <li class="list-group-item">Codice: {{$train->getUpperCode()}}</li>
-                    <li class="list-group-item">Numero di carrozze: {{$train->carriage}}</li>
+                    <li class="list-group-item"> Data Partenza: <strong>{{$train->departureTimeToString()}}</strong></li>
+                    <li class="list-group-item">Data Arrivo:<strong> {{$train->arrivedTimeToString()}}</strong></li>
+                    <li class="list-group-item">Azienda:<strong> {{$train->agency}}</strong></li>
+                    <li class="list-group-item">Codice:<strong> {{$train->getUpperCode()}}</strong></li>
+                    <li class="list-group-item">Numero di carrozze:<strong> {{$train->carriage}}</strong></li>
                     @if ($train->in_time)
-                    <li class="list-group-item">Treno in orario</li>
+                    <li class="list-group-item"><strong>Treno in orario</strong></li>
                     @else
-                    <li class="list-group-item">Treno in ritardo</li>
+                    <li class="list-group-item"><strong>Treno in ritardo</strong></li>
                     @endif
 
                     @if ($train->deleted)
-                    <li class="list-group-item">Cancellato</li>
+                    <li class="list-group-item"><strong>Cancellato</strong></li>
                     @endif
                     
                     
