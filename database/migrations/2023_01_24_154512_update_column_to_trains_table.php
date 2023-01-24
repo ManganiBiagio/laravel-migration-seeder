@@ -21,8 +21,8 @@ return new class extends Migration
             $table->dateTime("arrived_at");
             $table->string("code");
             $table->integer("carriage");
-            $table->boolean("in_time");
-            $table->boolean("deleted");
+            $table->boolean("in_time")->default(true);
+            $table->boolean("deleted")->default(false);
         });
     }
 
