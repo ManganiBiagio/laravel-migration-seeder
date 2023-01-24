@@ -17,8 +17,12 @@ class Train extends Model
         return $this->convertDateFromDb($this->arrived_at);
         
     }
+    public function getUpperCode(){
+        return strtoupper($this->code);
+    }
     private function convertDateFromDb($toConvert){
         return date("H:i d-m-Y ",strtotime($toConvert));
 
     }
+    
 }
